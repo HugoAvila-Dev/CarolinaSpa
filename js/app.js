@@ -1,11 +1,14 @@
-window.swiper = new Swiper({ 
-    el: '.slider__contenedor',
-    slideClass: 'slider__slide',
-    createElements: true,
-    autoPlay: {
-        delay: 5000
-    },
+var swiper = new Swiper(".swiper", {
+    effect: "cube",
+    grabCursor: true,
     loop: true,
-    pagination: true,
-    navigation: true,
- });
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
